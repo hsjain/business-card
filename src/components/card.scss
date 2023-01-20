@@ -1,0 +1,299 @@
+.container{
+    background-color: #15151e;
+    height: 100vh;
+    width: 100%;
+
+    .box{
+        background-color: #1f1f2d;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: 90%;
+        top: 5%;
+
+        .card{
+            background-color: #15151e;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 31%;
+            height: 90%;
+            top: 5%;
+
+
+            .pic{
+                height: 40%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .startDiv{
+                position: relative;
+                top: 1%;
+
+                .title{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .name{
+                        color: white;
+                        display: block;
+                    }
+                }
+    
+                .title1{
+                    padding-top: 1%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    .designation{
+                        color: white;
+                        font-size: 11px;
+                        color: #eb8f34;
+                    }
+                }
+    
+                .buttons{
+                    padding: 5% 30% 0 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    .emailA{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        text-decoration: none;
+                        .email{
+                            text-decoration: none;
+                            border: none;
+                            padding: 30% 70%;
+                            margin-right: 0px;
+                            font-size: 8px;
+                            cursor: pointer;
+                        }
+        
+                        .email:hover{
+                            box-shadow: rgba(14, 118, 168, 1.0) 0px 2px 2px;
+                            padding: 32% 72%;
+                        }
+                    }
+                    
+                    .linkA{
+                        .linkedin{
+                            background-color: #0e76a8;
+                            color: white;
+                            border: none;
+                            padding: 21% 30%;
+                            font-size: 8px;
+                            cursor: pointer;
+                        }
+        
+                        .linkedin:hover{
+                            box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 2px;
+                            padding: 22% 32%;
+                        }
+                    }
+                }
+            }
+
+            .about{
+                padding: 5% 7% 1.5% 10%;
+                position: relative;
+                top: 1%;
+                
+                .titless{
+                    color: white;
+                    padding-bottom: 2.5%;
+                }
+                .about-desc{
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 12px;
+                }
+            }
+
+            .interest{
+                padding: 0% 7% 5% 10%;
+                position: relative;
+                top: 1%;
+                
+                .titless{
+                    color: white;
+                    padding-bottom: 2.5%;
+                }
+                .interest-desc{
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 12px;
+                }
+            }
+
+            .foot{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #0a0a0f;
+                position: absolute;
+                top:95%;
+                height: 5%;
+                width: 100%;
+                
+                .icons{
+                    color: rgba(255, 255, 255, 0.3);
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        .box{
+            .card{
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .container{
+        .box{
+            .card{
+                width: 50%;
+
+                .about{
+                    .about-desc{
+                        font-size: 11px;
+                    }
+                }
+
+                .interest{
+                    .interest-desc{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        .box{
+            .card{
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px){
+    .container{
+        .box{
+            .card{
+                width: 80%;
+                
+                .buttons{
+                    flex-direction: column;
+
+                    .emailA{
+                        .email{
+                            margin-bottom: 2%;
+                        }
+                    }
+
+                    .linkA{
+                        padding-right: 18%;
+                    }
+
+                }
+
+                .about{
+                    .about-desc{
+                        font-size: 11px;
+                    }
+                }
+
+                .interest{
+                    .interest-desc{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 420px){
+    .container{
+        .box{
+            .card{
+                .buttons{
+                    .emailA{
+                        .email{
+                            margin-bottom: 2%;
+                        }
+                    }
+                    .linkA{
+                        padding-right: 20%;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px){
+    .container{
+        .box{
+            .card{
+                .buttons{
+                    .emailA{
+                        .email{
+                            margin-bottom: 2%;
+                        }
+                    }
+                    .linkA{
+                        padding-right: 25%;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-height: 750px){
+    .container{
+        .box{
+            width: 80%;
+
+            .card{
+                width: 70%;
+
+                .about{
+                    .about-desc{
+                        font-size: 14.5px;
+                    }
+                }
+
+                .interest{
+                    .interest-desc{
+                        font-size: 14.5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
